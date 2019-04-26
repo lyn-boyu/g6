@@ -1,9 +1,13 @@
-/**
- * @fileOverview item entry file
- * @author huangtonger@aliyun.com
- */
 
-module.exports = {
+const ShapeItems = {
+  Base: require('./item'),
   Node: require('./node'),
   Edge: require('./edge')
 };
+
+ShapeItems.registerItem = function(key, model) {
+  ShapeItems[key] = model;
+};
+
+
+module.exports = ShapeItems;

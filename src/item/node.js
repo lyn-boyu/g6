@@ -35,22 +35,6 @@ class Node extends Item {
     };
   }
 
-  // getNeighbors() {
-  //   const nodes = [];
-  //   let node = null;
-  //   Util.each(this.get('edges'), edge => {
-  //     if (edge.get('source') === this) {
-  //       node = edge.get('target');
-  //     } else {
-  //       node = edge.get('source');
-  //     }
-  //     if (nodes.indexOf(node) < 0) {
-  //       nodes.push(node);
-  //     }
-  //   });
-  //   return nodes;
-  // }
-
   /**
    * 获取从节点关联的所有边
    * @return {Array} 边的集合

@@ -74,7 +74,7 @@ class Item {
     }
     this.set('id', id);
     group.set('id', id);
-    this.init();
+    this.init(cfg);
     this.draw();
   }
 
