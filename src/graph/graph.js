@@ -456,6 +456,7 @@ class Graph extends EventEmitter {
     this.setAutoPaint(autoPaint);
     return this;
   }
+
   _diffItems(type, items, models) {
     const self = this;
     let item;

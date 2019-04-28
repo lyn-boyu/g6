@@ -37,6 +37,14 @@ class Node extends Item {
 
   /**
    * 获取从节点关联的所有边
+   * @return {Array} 锚点的集合
+   */
+  getAnchors() {
+    return this.get('anchors');
+  }
+
+  /**
+   * 获取从节点关联的所有边
    * @return {Array} 边的集合
    */
   getEdges() {
